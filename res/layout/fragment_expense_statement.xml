@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpenseStatement">
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText63"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/editText73"
+        android:layout_toStartOf="@+id/editText73"
+        android:text="   To:"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText63"
+        android:text="From:"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editText63"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/textView113"
+        android:layout_toRightOf="@+id/textView113"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="date"
+        android:text="DD/MM/YY" />
+
+    <EditText
+        android:id="@+id/editText73"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView103"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="date"
+        android:text="DD/MM/YY" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText63"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="GO"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:text="Expense Statement"
+        android:textStyle="bold"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/textView19"
+        android:text="DD1/MM1/YY1 TO DD2/MM2/YY2"
+        android:textStyle="bold"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20dp" />
+
+</RelativeLayout>
